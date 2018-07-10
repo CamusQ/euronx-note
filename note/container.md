@@ -1,4 +1,5 @@
 # 容器
+* [JDK容器链接](https://docs.oracle.com/javase/10/docs/api/java/util/doc-files/coll-overview.html)
 * 在Collection<T>中也可以加入T的子类型
 容器分为两大部分：collection保存单一元素和map保存键值对，也可以加上数组
 向上转型也可以像作用于其他类型一样作用于泛型
