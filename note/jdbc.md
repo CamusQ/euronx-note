@@ -4,7 +4,7 @@
 
 在控制面板的程序和功能中打开windows功能
 
-![](pictures/jdbc/打开telnet.png)
+![](pictures/jdbc/打开telnet.PNG )
 
 勾选全部telnet客户端
 
