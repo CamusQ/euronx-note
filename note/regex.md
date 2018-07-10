@@ -27,6 +27,6 @@
 
 /(完结)?撒|散花/
 **/(完结)?/**
-```
+```java
 Scanner stdin = new Scanner(System.in);  // 创建一个Scanner
 ```
