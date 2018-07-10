@@ -2,7 +2,12 @@
 ## 笔记
 * [eclipse相关操作](note/eclipse.md)
 * [基础知识](note/basic.md)
+* [面向对象](note/oo.md)
 * [内部类](note/inner_class.md)
+* [泛型](note/generic.md)
 * [容器](note/container.md)
+* [数组](note/array.md)
 * [Lambda表达式](note/lambda.md)
 * [正则表达式](note/regex.md)
+* [反射](note/reflection.md)
+* [JDBC](note/jdbc.md)
