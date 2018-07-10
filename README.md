@@ -8,6 +8,7 @@
 * [容器](note/container.md)
 * [数组](note/array.md)
 * [Lambda表达式](note/lambda.md)
+* [字符串](note/string.md)
 * [正则表达式](note/regex.md)
 * [反射](note/reflection.md)
 * [JDBC](note/jdbc.md)
