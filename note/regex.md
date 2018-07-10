@@ -6,15 +6,24 @@
 - `?` 0个或一个，等于`[0,1]`
 pattern 对象是一个正则表达式的编译表示
 
-Matcher 对象是对输入字符串进行解释和匹配操作的引擎
+Matcher 对象是对输入字符串进行解释和匹配操作的引擎，用法
+```java
+Pattern p = Pattern.compile("\\w+");
+Matcher m = p.matcher("abc");
+```
 
-Matcher.find(i)方法从输入的字符串的第i个字符开始匹配，并且如果匹配成功，会隐式的生成一个匹配字符串
+`m.find(i)`方法从输入的字符串的第i个字符开始匹配，并且如果匹配成功，会隐式的生成一个匹配字符串
+调用group方法可以获得该字符串
 
-，调用group方法可以获得该字符串
+`m.group(i)`方法返回表达式中第i个组所匹配成功的字符串结果，无匹配返回null
+`m.group()`方法返回整个表达式匹配成功的字符串
 
-对于匹配器 m、输入序列 s 和组索引 g，表达式 m.group(g) 和 s.substring(m.start(g), m.end(g)) 是等效的。 
+对于匹配器 m、输入序列 s 和组索引 g，表达式 `m.group(g)` 和 `s.substring(m.start(g), m.end(g))` 是等效的。 
 
-anchor(^或&)后跟一个单元表示此匹配是否以该单元开头，结尾
+anchor(^或&)后跟一个单元表示此匹配是否以该单元开头，结尾。例如，
+<pre>
+"(at\.)" => The fat c<a href="#learn-regex"><strong>at.</strong></a> s<a href="#learn-regex"><strong>at.</strong></a> on the m<a href="#learn-regex"><strong>at.</strong></a>
+</pre>
 ## 用于B站的表达式
 ### 刷时间
 <pre>
@@ -45,6 +54,7 @@ anchor(^或&)后跟一个单元表示此匹配是否以该单元开头，结尾
 /[\u4E00-\u9FA5]/
 </pre>
 ### 完结撒花
+<pre>
 /(完结)?撒|散花/
-
+</pre>
 
