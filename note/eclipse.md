@@ -1,4 +1,53 @@
 # Eclipse相关操作
+> [EURONX]® 建议使用背景色 
+
+  色调85  饱和度104  亮度205
+  
+  R202  G234  B206
+ 
+## 常用快捷键
+### 移动代码
+Ctrl + →： 光标向右移动一个单词
+
+Shift + →： 向右选择一个字符
+
+Ctrl + Shift + →：向右选择一个单词
+
+Shift + ↑： 向上选择一行
+
+home： 光标跳至行首
+
+home： 光标跳至行尾
+
+Shift + home： 选择光标至行首
+
+Ctrl + home： 光标跳至文章开头
+
+Ctrl + Shift + home：选择光标至文章开头
+
+Alt + ↑： 将当前行与上一行交换
+
+Alt + →： 在不同页面之间切换
+
+Alt： 将聚焦点移动至菜单栏
+
+Ctrl + 1： 跳至下一个问题行
+### 创建
+Ctrl + N： 新建文件
+
+### 操作
+Ctrl + Shift + F： 整理代码
+
+Alt + /: 自动补全
+
+Alt + Shift + S： 添加成员函数
+
+Alt + Shift + Z： 添加控制流程语句（if，for，while，try catch等）必须先选定部分代码
+
+Alt + Shift + X： 运行代码
+
+### Debug
+//TODO
 
 ## 重构（Refactor）
 ### Undo 
