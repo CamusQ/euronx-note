@@ -1,5 +1,63 @@
 # 内部类
-* 内部类只能以与外部类关联的情况下才可以创建，因为内部类需要连接到外部类的对象上
+定义在类中的类
+```java
+class A {
+  class B {
+  
+  }
+}
+```
+## 内部类与外部类
+内部类可以访问外围对象**所有成员**，因为当外围类对象创建一个内部类对象的时候，该内部类对象会隐式的捕获一个指向外围类对象的引用，所以在拥有外部类对象之前是不可能创建内部类对象的
+* `.this`生成对外部类对象的引用
+```java
+public class A {
+  
+  public class B {
+
+    public A getA(){
+      // 返回一个A对象
+      return A.this;
+    }
+  }
+}
+```
+* `.new`创建内部类对象
+```java
+public class A{
+  
+  public class B{
+  
+  }
+  
+  public static void main(String[] args){
+    A a = new A();
+    B b = a.new B();
+  }
+}
+```
+* 内部类与向上转型——隐藏实现细节
+```java
+interface B{}
+
+public class A{
+  
+  private class BImpl implements B{}
+  
+  public B getB(){
+    // 向上转型
+    return new BImpl();
+  }
+}
+```
+## 匿名内部类
+```java
+new Thread(new Runnable() {
+  public void run() {}
+}).start();
+```
+
+* ，因为内部类需要连接到外部类的对象上
 * 非嵌套内部类不能有static字段
 * 内部类可以访问外部类的全部成员(包括private)，因为创建内部类对象时，对象秘密捕获一个外部类对象的引用
 * 可以创建一个private内部类继承公共接口，达到隐藏实现细节的目的
