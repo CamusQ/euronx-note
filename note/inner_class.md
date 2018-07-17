@@ -16,7 +16,7 @@ public class A {
   public class B {
 
     public A getA(){
-      // 返回一个A对象
+      // 返回一个A对象的引用
       return A.this;
     }
   }
@@ -50,12 +50,16 @@ public class A{
   }
 }
 ```
-## 匿名内部类
+* 匿名内部类
 ```java
 new Thread(new Runnable() {
   public void run() {}
 }).start();
 ```
+创建一个继承自`Runnable`接口的类，通过new 表达式返回的引用被自动向上转型为对`Runnable`的引用，等价于，
+## 嵌套类Nested Class
+嵌套类为声明为`static`的内部类，与外围类对象无联系，无法访问外围类中非静态对象
+
 
 * ，因为内部类需要连接到外部类的对象上
 * 非嵌套内部类不能有static字段
