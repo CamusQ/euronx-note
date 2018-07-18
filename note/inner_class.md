@@ -56,20 +56,20 @@ new Thread(new Runnable() {
   public void run() {}
 }).start();
 ```
+相当于创建一个继承自`Runnable`接口的类，通过new表达式返回的引用被自动向上转型为对`Runnable`的引用
 ### 内部类的继承
 因为内部类的创建必须连接到外部类对象的引用，所以继承内部类的时候，外部类对象必须被初始化
 ```java
 class A {
-	class B {
-
-	}
+  class B {
+  }
 }
 
 class C extends A.B {
-	// A(){} Won't compile
-	public C(A a) {
-		a.super();
-	}
+  // A(){} Won't compile
+  public C(A a) {
+    a.super();
+  }
 }
 ```
 创建一个继承自`Runnable`接口的类，通过new 表达式返回的引用被自动向上转型为对`Runnable`的引用
@@ -116,7 +116,7 @@ class Sequence {
 		public boolean hasNext() {
 			return index < nums.length;
 		}
-
+	
 		@Override
 		public Integer next() {
 			return nums[index++];
