@@ -1,5 +1,5 @@
-# Other
-## 笔记
+# NOTE
+## Java
 * [eclipse相关操作](note/eclipse.md)
 * [基础知识](note/basic.md)
 * [面向对象](note/oo.md)
@@ -12,3 +12,5 @@
 * [正则表达式](note/regex.md)
 * [反射](note/reflection.md)
 * [JDBC](note/jdbc.md)
+## 数据库
+* [SQL语句](note/sql.md)
