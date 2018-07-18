@@ -3,6 +3,17 @@
 
 对象数组保存的是对象的引用，所以可以在每次使用
 
+如果一个方法返回一个数组的话，则可以直接使用方法调用加`[]`使用数组
+```java
+public static void main(String[] args) {
+	int a = foo()[2];
+}
+public static int[] foo() {
+	int[] ints = {1,2,3};
+	return ints;
+}
+```
+
 ## 数组与泛型
 通常泛型和数组无法一起使用，因为擦除会移除参数信息，而数组必须知道所持有的具体类型
 
