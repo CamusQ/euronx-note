@@ -8,6 +8,6 @@
 
 勾选全部telnet客户端
 
-![](pictures/jdbc/打开telnet1.png)
+![](../pictures/jdbc/urx.png)
 
 * 打开端口
