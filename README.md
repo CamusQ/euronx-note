@@ -15,6 +15,7 @@
 ## 数据库
 * [SQL语句](note/sql.md)
 ## 计算机网络
+* [动画演示](http://wps.pearsoned.com/ecs_kurose_compnetw_6/216/55463/14198700.cw/index.html)
 * [应用层](network/application_layer.md)
 * [运输层](network/transport_layer.md)
 * [网络层](network/network_layer.md)
